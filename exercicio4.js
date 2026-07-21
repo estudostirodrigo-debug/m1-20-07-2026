@@ -29,5 +29,12 @@ const filmes = [
     nota: 8.9,
     disponivel: false
   }];
+   
+ const filmesDisponiveis = filmes.filter((filme) => filme.disponivel == true);
+ console.log('Fimes disponíveis:', filmesDisponiveis);
 
-  
+ const filmeMuitoBom = filmes.filter((filme) => filme.nota >= 9);
+ console.log('Filme com nota maior ou igual a 9:', filmeMuitoBom);
+
+ const filmesAcao = filmes.filter((filme) => filme.genero == 'Ação');
+ console.log('Filme de ação: ', filmesAcao);
