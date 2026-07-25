@@ -50,3 +50,9 @@ const alunos = [
         nota2: 4.5
     }
 ];
+
+alunos = function formatarNome(nome){
+    return nome.toUpperCase().trim();
+};
+
+console.log(formatarNome(alunos));
